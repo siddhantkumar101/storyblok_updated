@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storyblok - Headless CMS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Component -->
+    <header>
+        <!-- Banner -->
+        <div class="banner py-3">
+            <div class="container-fluid text-center">
+                <p class="mb-0">JoyConf 2026 is back. Content Confidence. Human Connection. <a href="#" class="fw-bold text-decoration-underline">Save your spot!</a></p>
+            </div>
+        </div>
+        
+        <!-- Bootstrap 5 Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand fw-bold" href="#">
+                    <img src="assets/svgs/storyblok-logotype.svg" alt="Storyblok" class="brand-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Center Nav Links -->
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="#platform">Platform</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#solutions">Solutions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#developers">Developers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#partners">Partners</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    </ul>
+                    <!-- Right Side Items -->
+                    <ul class="navbar-nav align-items-center ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#search" aria-label="Search">
+                                <i class="bi bi-search"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
+                        <li class="nav-item">
+                            <a class="btn btn-dark btn-sm ms-2" href="#try-free">Try for Free</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-dark btn-sm ms-2" href="#contact-us">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Page Content -->
+    <main class="container-fluid p-0">
+        <!-- Hero Section -->
+        <section class="hero-section py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 text-center text-lg-start mb-5 mb-lg-0">
+                        <h1 class="hero-title mb-3">
+                            Your AI is only as<br>good as <span class="text-primary">your content.</span><br>Make it <span class="text-primary">joyful.</span>
+                        </h1>
+                        <p class="hero-subtitle mb-4">
+                            Structure your content once. Let your team, your agents, and your workflows run wild with confidence.
+                        </p>
+                        <div class="d-flex gap-3 justify-content-center justify-content-lg-start mb-4">
+                            <a class="btn btn-dark" href="#try-free">Try for Free</a>
+                            <a class="btn btn-outline-dark" href="#mcp">See our MCP</a>
+                        </div>
+                        <div class="hero-rating">
+                            <img src="assets/svgs/g2-stars-small.svg" alt="G2 five star rating" class="rating-stars-img">
+                            <span class="rating-text">4.9 | Enterprise Headless CMS</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-image">
+                            <img src="assets/images/hero-visual-editor-ai-mcp.png" alt="Storyblok visual editor interface featuring AI tools" class="img-fluid rounded-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brands Section -->
+        <section class="brands-section py-5 border-top border-bottom">
+            <div class="container">
+                <p class="text-center text-muted mb-4">Trusted by leading companies</p>
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                        <img src="assets/svgs/disney-wordmark.svg" alt="Disney" class="img-fluid opacity-75">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                        <img src="assets/svgs/netflix-logo.svg" alt="Netflix" class="img-fluid opacity-75">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                        <img src="assets/svgs/oatly.svg" alt="Oatly" class="img-fluid opacity-75">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                        <img src="assets/svgs/marcopolo-logo.svg" alt="Marc O'Polo" class="img-fluid opacity-75">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                        <img src="assets/images/renault.png" alt="Renault" class="img-fluid opacity-75">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                        <img src="assets/svgs/adidas.svg" alt="Adidas" class="img-fluid opacity-75">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Section - Enhanced -->
+        <section class="why-choose-section py-5">
+            <div class="container">
+                <h2 class="text-center mb-3">Why teams choose Storyblok</h2>
+                <p class="text-center text-muted mb-5">The headless CMS that works <strong>for developers and marketers AND agents</strong> without any tradeoffs.</p>
+                <div class="row g-4 mb-5">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card h-100">
+                            <h5 class="feature-title mb-3">Get ideas to market faster</h5>
+                            <ul class="feature-list">
+                                <li><i class="bi bi-check-circle-fill text-primary"></i> Visual editing</li>
+                                <li><i class="bi bi-check-circle-fill text-primary"></i> Empowered Editors and Agents</li>
+                                <li><i class="bi bi-check-circle-fill text-primary"></i> Composable blocks</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card h-100">
+                            <h5 class="feature-title mb-3">Dance to your own tunes</h5>
+                            <ul class="feature-list">
+                                <li><i class="bi bi-check-circle-fill text-primary"></i> The freedom of headless</li>
+                                <li><i class="bi bi-check-circle-fill text-primary"></i> API-first</li>
+                                <li><i class="bi bi-check-circle-fill text-primary"></i> Any channel, any language</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card h-100">
+                            <h5 class="feature-title mb-3">Free your team</h5>
+                            <ul class="feature-list">
+                                <li><i class="bi bi-check-circle-fill text-primary"></i> Easy to adopt, innovate & scale</li>
+                                <li><i class="bi bi-check-circle-fill text-primary"></i> Simple, elegant workflows with FlowMotion</li>
+                                <li><i class="bi bi-check-circle-fill text-primary"></i> Everything works together, you'll love it</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Platform Section -->
+        <section class="platform-section py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-3">The platform where Humans<br>and Agents work together</h2>
+                <p class="text-center text-muted mb-5">Managing your content shouldn't be a hassle. So we made it joyful.</p>
+                
+                <div class="row g-4">
+                    <!-- For Developers -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="role-card role-card-developer h-100">
+                            <h4 class="role-title">For Developers</h4>
+                            <p class="role-subtitle">API-first, MCP enabled, and component based delivery stack using Next.js, Astro, Nuxt, React and more.</p>
+                            <ul class="role-features mb-4">
+                                <li><i class="bi bi-check"></i> API-first, MCP enabled, and component based delivery</li>
+                                <li><i class="bi bi-check"></i> Customize your delivery stack using Next.js, Astro, Nuxt, React and more.</li>
+                            </ul>
+                            <a href="#learn-more" class="btn btn-outline-dark btn-sm">Learn more</a>
+                            <img src="assets/images/developers-bg.png" alt="Developer interface preview" class="role-card-image mt-4">
+                        </div>
+                    </div>
+
+                    <!-- For Marketers -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="role-card role-card-marketer h-100">
+                            <h4 class="role-title">For Marketers</h4>
+                            <p class="role-subtitle">The fast, intuitive way to create, manage and optimize content that converts.</p>
+                            <ul class="role-features mb-4">
+                                <li><i class="bi bi-check"></i> Intuitive editing experience</li>
+                                <li><i class="bi bi-check"></i> Drag and drop Components</li>
+                                <li><i class="bi bi-check"></i> On-page collaboration</li>
+                            </ul>
+                            <a href="#check-it-out" class="btn btn-dark btn-sm">Check it out</a>
+                            <img src="assets/images/visual-editor-marketers-orange.png" alt="Visual editor marketer preview" class="role-card-image mt-4">
+                        </div>
+                    </div>
+
+                    <!-- For Enterprises -->
+                    <div class="col-12">
+                        <div class="role-card role-card-enterprise h-100">
+                            <div class="row align-items-center">
+                                <div class="col-lg-8">
+                                    <h4 class="role-title text-white">For Enterprises</h4>
+                                    <p class="role-subtitle text-white-50">A click to get started, endlessly scalable, and packed with enterprise-grade features.</p>
+                                    <div class="row g-3 mb-4">
+                                        <div class="col-md-4">
+                                            <div class="enterprise-feature">
+                                                <i class="bi bi-shield-lock"></i>
+                                                <p>ISO 27001 certified Security and 99.99% uptime SLA</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="enterprise-feature">
+                                                <i class="bi bi-lightning"></i>
+                                                <p>Built-in performance tools and seamless integrations for effortless</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="enterprise-feature">
+                                                <i class="bi bi-bank"></i>
+                                                <p>Bank-of-Israel approved risk you haven't heard of your stack.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#lets-go" class="btn btn-light btn-sm">Let's go</a>
+                                </div>
+                                <div class="col-lg-4 d-none d-lg-block">
+                                    <div class="enterprise-decoration"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section py-5">
+            <div class="container">
+                <h2 class="text-center mb-3">From build to live, faster than you'd believe</h2>
+                <p class="text-center text-muted mb-5">See what's possible when dev and marketing move as one.</p>
+                
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="stat-card text-center">
+                            <div class="stat-logo mb-3">
+                                <img src="assets/svgs/tomtom.svg" alt="TomTom" class="img-fluid">
+                            </div>
+                            <div class="stat-number text-primary">50%</div>
+                            <p class="stat-label">increase in content operations speed</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="stat-card text-center">
+                            <div class="stat-logo mb-3">
+                                <img src="assets/svgs/education-first.svg" alt="Education First" class="img-fluid">
+                            </div>
+                            <div class="stat-number text-primary">486,000+</div>
+                            <p class="stat-label">total pages created</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="stat-card text-center">
+                            <div class="stat-logo mb-3">
+                                <img src="assets/svgs/oatly.svg" alt="Oatly" class="img-fluid">
+                            </div>
+                            <div class="stat-number text-primary">2 months</div>
+                            <p class="stat-label">to build 10 global sites</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="stat-card text-center">
+                            <div class="stat-logo mb-3">
+                                <img src="assets/svgs/mindvalley.svg" alt="Mindvalley" class="img-fluid">
+                            </div>
+                            <div class="stat-number text-primary">50%</div>
+                            <p class="stat-label">reduction in development time</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agents Section -->
+        <section class="agents-section py-5">
+            <div class="container">
+                <h2 class="text-center mb-2">Your agents are reading your content.</h2>
+                <h3 class="text-center text-primary mb-4">Is it ready?</h3>
+                <p class="text-center text-muted mb-5 max-width-700 mx-auto">Your agents showed up ready to work. Your content should too.<br><br>Our native <strong>MCP Server</strong>, structured models, and clean APIs mean agents dive straight in.<br>And <strong>FlowMotion</strong> gives you workflows so consistent and smooth, you'll actually look forward to Mondays.</p>
+                
+                <div class="agents-card">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <h4 class="agents-card-title mb-3">Agentic Experiences<br>with our MCP Server</h4>
+                            <p class="agents-card-text mb-3">Agents are only as smart as the content they can read and action they know about.</p>
+                            <p class="agents-card-text mb-4">Storyblok's native MCP Server connects any agent directly to your content - complete with full awareness of your structure, schemas, and brand voice. The result? Agents that don't just access your content. They get it.</p>
+                            <a href="#learn-more" class="btn btn-dark btn-sm">Learn more</a>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="agents-card-image">
+                                <img src="assets/images/storyblok-mcp-hp.png" alt="Storyblok MCP Server interface" class="img-fluid rounded-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FlowMotion Section -->
+        <section class="flowmotion-section py-5">
+            <div class="container">
+                <div class="flowmotion-card">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="flowmotion-image">
+                                <img src="assets/images/flowmotion-tn-web.png" alt="FlowMotion orchestration interface" class="img-fluid rounded-3">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h4 class="flowmotion-title mb-3">AI Orchestration<br>with FlowMotion</h4>
+                            <p class="flowmotion-text mb-3">Agents are brilliant solo. Together, they're unstoppable - but only if everything keeps in sync.</p>
+                            <p class="flowmotion-text mb-4">FlowMotion is where your AI agents orchestrate without the chaos. It's distributed, consistent, collaborative workflows. No more siloed automation. Just your content, your teams, and your AI working together in perfect harmony.</p>
+                            <a href="#learn-more" class="btn btn-dark btn-sm">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Frameworks Section -->
+        <section class="frameworks-section py-5">
+            <div class="container">
+                <h2 class="text-center mb-2">Build a project in your framework in 5 minutes</h2>
+                <p class="text-center text-muted mb-5">API-first, component-based, dev-empowered. Select your framework and jump right in!</p>
+                
+                <div class="frameworks-grid">
+                    <div class="framework-item">
+                        <img src="assets/svgs/next.svg" alt="Next.js" class="img-fluid">
+                        <p>Next.js</p>
+                    </div>
+                    <div class="framework-item">
+                        <img src="assets/svgs/astro.svg" alt="Astro" class="img-fluid">
+                        <p>Astro</p>
+                    </div>
+                    <div class="framework-item">
+                        <img src="assets/svgs/nuxt.svg" alt="Nuxt" class="img-fluid">
+                        <p>Nuxt</p>
+                    </div>
+                    <div class="framework-item">
+                        <img src="assets/svgs/react.svg" alt="React" class="img-fluid">
+                        <p>React</p>
+                    </div>
+                    <div class="framework-item">
+                        <img src="assets/svgs/vue.svg" alt="Vue" class="img-fluid">
+                        <p>Vue</p>
+                    </div>
+                    <div class="framework-item">
+                        <img src="assets/svgs/eleventy-logo.svg" alt="Eleventy" class="img-fluid">
+                        <p>Eleventy</p>
+                    </div>
+                    <div class="framework-item">
+                        <img src="assets/svgs/symfony-logo.svg" alt="Symfony" class="img-fluid">
+                        <p>Symfony</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section py-5">
+            <div class="container">
+                <div class="mb-4">
+                    <h2 class="section-title mb-2">The last CMS you'll ever buy</h2>
+                    <p class="section-kicker mb-0">Joyful Headless means never re-platforming again.</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <article class="testimonial-card testimonial-card-blue h-100">
+                            <div class="testimonial-logo mb-4">
+                                <img src="assets/svgs/international-data-corporation-logo.svg" alt="IDC" class="img-fluid">
+                            </div>
+                            <h3 class="testimonial-title mb-3">MarketScape for Headless CMS</h3>
+                            <p class="testimonial-text mb-4">Storyblok stands out for its flexible architecture, intuitive editing experience, and enterprise scalability.</p>
+                            <a href="#idc-report" class="card-arrow" aria-label="Read IDC report">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <article class="testimonial-card testimonial-card-green h-100">
+                            <div class="testimonial-logo mb-4">
+                                <img src="assets/svgs/forrester.svg" alt="Forrester" class="img-fluid">
+                            </div>
+                            <h3 class="testimonial-title mb-3">The highest ROI with 582%</h3>
+                            <p class="testimonial-text mb-4">Storyblok's massive 582% ROI in our Total Economic Impact report was conducted by Forrester Consulting.</p>
+                            <a href="#forrester-report" class="card-arrow" aria-label="Read Forrester report">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <article class="testimonial-card testimonial-card-peach h-100">
+                            <div class="testimonial-rating d-flex align-items-center gap-2 mb-4">
+                                <img src="assets/svgs/g2.svg" alt="G2" class="g2-logo">
+                                <span class="stars" aria-label="Five star rating">*****</span>
+                                <small>4.7 out of 5 on G2</small>
+                            </div>
+                            <h3 class="testimonial-title mb-3">The G2 leader in Headless CMS</h3>
+                            <p class="testimonial-text mb-4">G2 reviews Storyblok over 50 badges as the #1 Enterprise Headless CMS.</p>
+                            <a href="#g2-reviews" class="card-arrow" aria-label="Read G2 reviews">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Reviews Section -->
+        <section class="reviews-section">
+            <div class="container">
+                <div class="reviews-panel">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <article class="review-item h-100">
+                                <h3 class="review-title mb-3">Danielle says it's faster. <i class="bi bi-rocket-takeoff"></i></h3>
+                                <p class="review-quote mb-4">"We create web pages in 10 minutes."</p>
+                                <div class="review-author d-flex align-items-center gap-3 pt-3">
+                                    <img src="assets/images/danielle-van-zuijlen-tomtom.jpeg" alt="Danielle van Zuilen" class="rounded-circle">
+                                    <p class="mb-0">Danielle van Zuijlen, TomTom</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-6">
+                            <article class="review-item h-100">
+                                <h3 class="review-title mb-3">Ronan fell back in love. <i class="bi bi-hearts"></i></h3>
+                                <p class="review-quote mb-4">"300 sites later, marketers love websites again."</p>
+                                <div class="review-author d-flex align-items-center gap-3 pt-3">
+                                    <img src="assets/images/ronan.jpeg" alt="Ronan Morris" class="rounded-circle">
+                                    <p class="mb-0">Ronan Morris, Together Digital</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Studies Section -->
+        <section class="case-studies-section py-5">
+            <div class="container">
+                <div class="mb-4">
+                    <h2 class="section-title mb-2">Not our first barbecue</h2>
+                    <p class="section-kicker mb-0">Customer stories that sizzle.</p>
+                </div>
+
+                <article class="case-card featured-card mb-4">
+                    <div class="row g-0 align-items-stretch">
+                        <div class="col-lg-5">
+                            <div class="featured-case-content h-100">
+                                <div class="nrf-logo mb-4">
+                                    <img src="assets/svgs/nrf-logo-red.svg" alt="National Retail Federation" class="img-fluid">
+                                </div>
+                                <h3 class="case-title mb-3">National Retail Federation</h3>
+                                <p class="case-description mb-4">Redefining digital content for the world's biggest retail event.</p>
+                                <div class="case-stats d-flex flex-wrap gap-4 mb-4">
+                                    <div>
+                                        <strong>40%</strong>
+                                        <span>Reduced Development Time</span>
+                                    </div>
+                                    <div>
+                                        <strong>100</strong>
+                                        <span>Lighthouse SEO</span>
+                                    </div>
+                                </div>
+                                <a href="#nrf-case-study" class="btn btn-dark btn-sm">Learn more</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <img src="assets/images/nrf-cs-masked.png" alt="National Retail Federation event hall" class="featured-case-image">
+                        </div>
+                    </div>
+                </article>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <article class="case-card compact-case-card h-100">
+                            <img src="assets/images/cs-octopus-energy.png" alt="Octopus Energy renewable power site" class="case-image mb-3">
+                            <h3 class="case-title mb-2">Octopus Energy</h3>
+                            <p class="case-description mb-0">Explore how Octopus Energy releases new pages faster with a scalable content stack.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <article class="case-card compact-case-card h-100">
+                            <img src="assets/images/oatly-case.png" alt="Oatly product beside coffee cup" class="case-image mb-3">
+                            <h3 class="case-title mb-2">Oatly</h3>
+                            <p class="case-description mb-0">See how Oatly's digital experiences fueled growth across global markets.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <article class="case-card compact-case-card h-100">
+                            <img src="assets/images/virgin-media-o2-cs-cover.png" alt="Virgin Media O2 digital launch at night" class="case-image mb-3">
+                            <h3 class="case-title mb-2">Virgin Media O2</h3>
+                            <p class="case-description mb-0">Find out how Virgin Media dials in digital content across teams and channels.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Success Section -->
+        <section class="success-section py-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-center g-5">
+                    <div class="col-lg-5">
+                        <h2 class="success-title mb-3">Your success.<br>Our success.<br><span>Potato, potato.</span></h2>
+                        <p class="success-text mb-4">You're going to love our customer success team, but we can't promise they won't love you more.</p>
+                        <a href="#customer-success" class="success-link">Get in on the fun with Storyblok and you'll get paired with one of our dedicated customer success teams.</a>
+                    </div>
+                    <div class="col-lg-4">
+                        <article class="success-quote-card">
+                            <i class="bi bi-hearts success-card-icon"></i>
+                            <h3 class="mb-3">Jawaad just wants to make you happy</h3>
+                            <p class="mb-4">"Storyblok is so intuitive, most of our customers just get it right away. But I'm here to make sure their team keeps winning."</p>
+                            <div class="d-flex align-items-center gap-3 pt-3 success-author">
+                                <img src="assets/images/jawaad-qureshi.png" alt="Jawaad Qureshi" class="rounded-circle">
+                                <div>
+                                    <strong>Jawaad Qureshi</strong>
+                                    <span>Customer Success Manager at Storyblok</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Start Section -->
+        <section class="start-section py-5">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h2 class="section-title mb-2">Ready to start? Joy awaits.</h2>
+                    <p class="section-kicker mb-0">Experience why Storyblok is scientifically proven to bring joy to at least 83% of users.</p>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <a href="#try-free" class="start-card d-block h-100 text-decoration-none">
+                            <i class="bi bi-stars start-card-icon"></i>
+                            <h3>Try for Free</h3>
+                            <p>Create your free account to start building in just 5 minutes.</p>
+                            <span class="start-arrow"><i class="bi bi-arrow-right"></i></span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <a href="#get-demo" class="start-card d-block h-100 text-decoration-none">
+                            <i class="bi bi-calendar-check start-card-icon"></i>
+                            <h3>Get a Demo</h3>
+                            <p>Schedule a free personalized walkthrough to discuss your goals.</p>
+                            <span class="start-arrow"><i class="bi bi-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer py-5">
+            <div class="container">
+                <div class="footer-divider mb-5"></div>
+                <div class="row g-4">
+                    <div class="col-6 col-md-4 col-lg">
+                        <h3>Platform</h3>
+                        <ul class="footer-links">
+                            <li><a href="#product">Product</a></li>
+                            <li><a href="#why-storyblok">Why Storyblok</a></li>
+                            <li><a href="#storyblok-labs">Storyblok Labs</a></li>
+                            <li><a href="#ecosystem">Ecosystem</a></li>
+                            <li><a href="#app-directory">App Directory</a></li>
+                            <li><a href="#roadmap">Roadmap</a></li>
+                            <li><a href="#headless-cms">What is Headless CMS</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg">
+                        <h3>Solutions</h3>
+                        <ul class="footer-links">
+                            <li><a href="#enterprise">Enterprise</a></li>
+                            <li><a href="#developers">Developers</a></li>
+                            <li><a href="#marketers">Marketers</a></li>
+                            <li><a href="#mach">MACH Alliance</a></li>
+                            <li><a href="#roi">ROI Calculator</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg">
+                        <h3>Developers</h3>
+                        <ul class="footer-links">
+                            <li><a href="#quick-start">Quick Start</a></li>
+                            <li><a href="#guides">Developer Guides</a></li>
+                            <li><a href="#tutorials">Developer Tutorials</a></li>
+                            <li><a href="#api-docs">API Documentation</a></li>
+                            <li><a href="#changelog">Changelog</a></li>
+                            <li><a href="#nextjs">Next.js guide</a></li>
+                            <li><a href="#nuxt">Nuxt guide</a></li>
+                            <li><a href="#react">React guide</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg">
+                        <h3>Resources</h3>
+                        <ul class="footer-links">
+                            <li><a href="#contact-sales">Contact Sales</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#whitepapers">Whitepapers</a></li>
+                            <li><a href="#case-studies">Case Studies</a></li>
+                            <li><a href="#webinars">Webinars & Events</a></li>
+                            <li><a href="#editor-guides">Content Editor Guides</a></li>
+                            <li><a href="#support">Services & Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg">
+                        <h3>Company</h3>
+                        <ul class="footer-links">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#careers">Careers <span class="badge text-bg-dark">25+</span></a></li>
+                            <li><a href="#press">Press</a></li>
+                            <li><a href="#trust">Trust Center</a></li>
+                            <li><a href="#terms">Terms and Conditions</a></li>
+                            <li><a href="#legal">Legal Notice</a></li>
+                            <li><a href="#privacy">Privacy Policy</a></li>
+                            <li><a href="#cookies">Cookie Settings</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 pt-5">
+                    <p class="mb-0">Copyright 2017-2026 Storyblok GmbH</p>
+                    <a href="#top" class="footer-brand text-decoration-none"><i class="bi bi-square-fill"></i> storyblok</a>
+                    <div class="footer-social d-flex gap-3">
+                        <a href="#x" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#github" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                        <a href="#linkedin" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#youtube" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        <a href="#instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
