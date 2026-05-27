@@ -1,0 +1,470 @@
+/* CSS Stylesheet for why-storyblok.html */
+
+/* Core variables/tokens (extended if needed) */
+:root {
+    --why-color-dev: #7c3aed;
+    --why-color-marketer: #0066cc;
+    --why-color-enterprise: #2baf2b;
+    --why-color-dark-bg: #11151e;
+    --why-card-bg-light: #f7f7f9;
+}
+
+/* Kicker and Title Standard styling */
+.why-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+}
+
+.why-kicker.dev {
+    color: var(--why-color-dev);
+}
+
+.why-kicker.marketer {
+    color: var(--why-color-marketer);
+}
+
+.why-kicker.enterprise {
+    color: var(--why-color-enterprise);
+}
+
+.why-section-title {
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 800;
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.why-section-title span {
+    font-weight: 800;
+}
+
+.why-section-title.dev span {
+    color: var(--why-color-dev);
+}
+
+.why-section-title.marketer span {
+    color: var(--why-color-marketer);
+}
+
+.why-section-title.enterprise span {
+    color: var(--why-color-enterprise);
+}
+
+.why-section-desc {
+    font-size: 1rem;
+    color: #555555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-bottom: 3.5rem;
+}
+
+/* 1. Hero Section */
+.why-hero-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f3f0ff 0%, #e6f0fa 100%);
+    border-radius: 0 0 var(--border-radius-section) var(--border-radius-section);
+    position: relative;
+    overflow: hidden;
+}
+
+.why-hero-title {
+    font-size: clamp(2.5rem, 5vw, 4.2rem);
+    font-weight: 850;
+    line-height: 1.1;
+    color: var(--color-dark);
+    margin-bottom: 1.5rem;
+}
+
+.why-hero-title span.lavender {
+    color: var(--why-color-dev);
+}
+
+.why-hero-title span.blue {
+    color: var(--why-color-marketer);
+}
+
+.why-hero-desc {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 2rem;
+}
+
+.why-hero-image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.why-hero-bg-blob {
+    position: absolute;
+    width: 130%;
+    height: 130%;
+    background-color: rgba(124, 58, 237, 0.06);
+    border-radius: 40% 60% 60% 40% / 50% 30% 70% 50%;
+    z-index: 0;
+}
+
+.why-hero-image {
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Features Block Styles */
+.why-block-section {
+    padding: 5rem 0;
+}
+
+/* Big Featured Card */
+.why-featured-card {
+    background-color: #f0edff;
+    border-radius: 20px;
+    padding: 4rem;
+    margin-bottom: 2.5rem;
+    border: none;
+    transition: var(--transition-smooth);
+}
+
+.why-featured-card.marketer {
+    background-color: #e6f1fc;
+}
+
+.why-featured-card.enterprise {
+    background-color: #eef7ee;
+}
+
+.why-featured-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+}
+
+.why-featured-card-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--color-dark);
+    margin-bottom: 1.5rem;
+    line-height: 1.25;
+}
+
+.why-featured-card-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 2rem;
+}
+
+.why-featured-card-image {
+    width: 100%;
+    max-height: 320px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+/* Split Columns secondary cards */
+.why-sub-card {
+    background-color: var(--why-card-bg-light);
+    border-radius: 16px;
+    padding: 3rem 2.5rem;
+    height: 100%;
+    border: 1px solid #eef0f3;
+    transition: var(--transition-smooth);
+}
+
+.why-sub-card:hover {
+    background-color: #ffffff;
+    border-color: #d7d7d7;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.why-sub-card-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--color-dark);
+    margin-bottom: 1.25rem;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.why-sub-card-desc {
+    font-size: 0.88rem;
+    color: #666;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* CLI command style code block */
+.why-cli-box {
+    background-color: #ffffff;
+    border: 1px solid #d7d7d7;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.82rem;
+    color: var(--color-dark);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.why-cli-tag {
+    background-color: #e8e6ff;
+    color: var(--why-color-dev);
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.15rem 0.35rem;
+    border-radius: 4px;
+}
+
+.why-frameworks-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.why-frameworks-row img {
+    height: 28px;
+    object-fit: contain;
+    opacity: 0.85;
+    transition: var(--transition-smooth);
+}
+
+.why-frameworks-row img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Testimonial Quote Banner */
+.why-quote-card {
+    background-color: var(--why-color-dark-bg);
+    border-radius: 16px;
+    padding: 4rem;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    margin-top: 4rem;
+}
+
+.why-quote-title {
+    font-size: 1.55rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.why-quote-text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #c7cbd3;
+    font-style: italic;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 2rem;
+}
+
+.why-quote-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.why-quote-author-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.why-quote-author-details strong {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.why-quote-author-details span {
+    font-size: 0.78rem;
+    color: #a2a6b0;
+}
+
+/* Secure Banner custom icon additions */
+.why-iso-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #111;
+    color: #fff;
+    font-weight: 800;
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 30px;
+    margin-right: 0.5rem;
+}
+
+/* Awards / Metrics Grid */
+.why-awards-section {
+    padding: 5rem 0;
+    background-color: #ffffff;
+}
+
+.why-awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.why-award-card {
+    border-radius: 16px;
+    padding: 3rem 2.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: var(--transition-smooth);
+}
+
+.why-award-card.blue {
+    background-color: #e6f6ff;
+    border: 1px solid #bce1f8;
+}
+
+.why-award-card.green {
+    background-color: #eef7ee;
+    border: 1px solid #c7e9c7;
+}
+
+.why-award-card.orange {
+    background-color: #fff2ed;
+    border: 1px solid #fbc9b7;
+}
+
+.why-award-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
+
+.why-award-brand {
+    font-size: 1.15rem;
+    font-weight: 850;
+    margin-bottom: 2rem;
+}
+
+.why-award-card.blue .why-award-brand {
+    color: #0056b3;
+}
+
+.why-award-card.green .why-award-brand {
+    color: #1e7e34;
+}
+
+.why-award-card.orange .why-award-brand {
+    color: #ca4a1c;
+}
+
+.why-award-title {
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.why-award-desc {
+    font-size: 0.88rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Call to action boxes */
+.why-cta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.why-cta-card {
+    border: 1.5px solid #d7d7d7;
+    border-radius: 16px;
+    padding: 3.5rem 3rem;
+    text-decoration: none;
+    color: var(--color-dark);
+    transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 240px;
+}
+
+.why-cta-card:hover {
+    border-color: var(--color-dark);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    transform: translateY(-4px);
+    color: var(--color-dark);
+}
+
+.why-cta-card h3 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.why-cta-card p {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.why-cta-arrow {
+    width: 2.2rem;
+    height: 2.2rem;
+    border: 1.5px solid var(--color-dark);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: var(--transition-smooth);
+}
+
+.why-cta-card:hover .why-cta-arrow {
+    background-color: var(--color-dark);
+    color: #ffffff;
+}
+
+@media (max-width: 991px) {
+    .why-featured-card {
+        padding: 2.5rem 1.5rem;
+    }
+    
+    .why-sub-card {
+        padding: 2.5rem 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .why-quote-card {
+        padding: 2.5rem 1.5rem;
+    }
+}
