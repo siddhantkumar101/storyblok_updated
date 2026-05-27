@@ -39,12 +39,15 @@
 .about-hero-bg-shapes {
     position: absolute;
     z-index: 1;
-    width: 140%;
-    height: 140%;
+    top: 50%;
+    right: -8%;
+    transform: translateY(-50%) scale(1.6);
+    width: 680px;
+    height: 680px;
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path fill="%23e3f2fd" d="M45.7,-77.2C59.4,-70.5,70.9,-58.5,78.3,-44.4C85.7,-30.2,88.9,-15.1,89.5,0.3C90.1,15.7,88.1,31.4,81.4,45C74.6,58.6,63.1,70,49.2,77.5C35.3,84.9,17.7,88.4,0.3,87.9C-17,87.4,-34.1,83,-48.5,75.4C-62.9,67.8,-74.7,57,-82.1,43.3C-89.5,29.6,-92.5,14.8,-92.7,-0.1C-92.9,-15.1,-90.4,-30.2,-83.1,-43.3C-75.7,-56.3,-63.5,-67.4,-49.6,-73.9C-35.8,-80.4,-20.3,-82.4,-2.4,-78.3C15.5,-74.2,31.9,-84,45.7,-77.2Z" transform="translate(100 100)" /></svg>') no-repeat center;
     background-size: contain;
-    transform: scale(1.35);
-    opacity: 0.9;
+    opacity: 0.95;
+    pointer-events: none;
 }
 
 .about-hero-image {
