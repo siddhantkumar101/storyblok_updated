@@ -145,6 +145,44 @@
     margin-bottom: 0;
 }
 
+.founders-image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    padding: 1.5rem;
+}
+
+.founders-img {
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    transform: rotate(2.5deg);
+    transition: var(--transition-smooth);
+    position: relative;
+    z-index: 2;
+}
+
+.founders-image-wrapper:hover .founders-img {
+    transform: rotate(0deg) scale(1.02);
+}
+
+.spark {
+    position: absolute;
+    z-index: 3;
+    color: #111111;
+}
+
+.spark-tl {
+    top: 0;
+    left: 0;
+}
+
+.spark-br {
+    bottom: 0;
+    right: 0;
+}
+
 .founders-card strong {
     color: var(--color-dark);
 }
