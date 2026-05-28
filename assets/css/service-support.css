@@ -1,0 +1,6 @@
+/* service-support.css */
+body { font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #1a1a1a; }
+.custom-table th { font-size: 0.95rem; color: #1a1a1a; }
+.custom-table td { font-size: 0.95rem; }
+.table-striped>tbody>tr:nth-of-type(odd)>* { --bs-table-bg-type: #f4f6f8; }
+.table-striped>tbody>tr:nth-of-type(even)>* { --bs-table-bg-type: #ffffff; }
