@@ -187,7 +187,7 @@ body {
     border-radius: 12px;
     overflow: hidden;
     height: 100%;
-    border: 1.5px solid #1a1a1a; /* solid black border like screenshot */
+    border: 1px solid #e2e8f0;
     display: flex;
     flex-direction: column;
     transition: transform 0.2s, box-shadow 0.2s;
@@ -230,22 +230,6 @@ body {
     color: #4a5568;
     margin-bottom: 24px;
     flex-grow: 1;
-}
-.case-arrow {
-    align-self: flex-end;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 1px solid #e2e8f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #1a1a1a;
-    transition: background 0.2s, color 0.2s;
-}
-.case-card:hover .case-arrow {
-    background: #1a1a1a;
-    color: white;
 }
 
 /* Call to Action Cards */
