@@ -1,0 +1,272 @@
+/* signup.css */
+body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Minimal Header */
+.signup-header {
+    padding: 1.5rem 0;
+    background: white;
+}
+.signup-header .brand-logo {
+    height: 32px;
+}
+
+/* Left Column Styling */
+.hero-headline {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 3rem;
+    color: #0F172A;
+}
+
+.feature-block {
+    margin-bottom: 2rem;
+}
+.feature-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    color: #0F172A;
+}
+.feature-title i {
+    margin-right: 12px;
+    font-size: 1.25rem;
+}
+.feature-desc {
+    color: #475569;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-left: 32px; /* aligns with text, offset by icon */
+}
+
+.trust-section h3 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #0F172A;
+    margin: 3rem 0 1.5rem;
+}
+
+.stat-card {
+    border-radius: 12px;
+    padding: 1.5rem;
+    height: 100%;
+}
+.stat-card.green-bg {
+    background-color: #F0FDF4; /* light green */
+}
+.stat-card.blue-bg {
+    background-color: #F0F9FF; /* light blue */
+}
+.stat-value {
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    color: #0F172A;
+}
+.stat-text {
+    font-size: 0.85rem;
+    color: #475569;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.testimonial-card {
+    background-color: #F8FAFC;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+.testimonial-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.testimonial-text {
+    font-size: 0.8rem;
+    color: #334155;
+    line-height: 1.6;
+}
+.testimonial-text span {
+    font-weight: 700;
+    color: #0F172A;
+}
+
+/* Right Column (Form) Styling */
+.form-container-bg {
+    background-color: #E0F2FE; /* Light blue large background */
+    border-radius: 24px;
+    padding: 2.5rem;
+    height: 100%;
+}
+.form-card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.form-title {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #0F172A;
+    text-align: center;
+    margin-bottom: 0.25rem;
+}
+.form-subtitle {
+    text-align: center;
+    color: #64748B;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.btn-github {
+    background-color: #1E293B;
+    color: white;
+    font-weight: 700;
+    padding: 0.75rem;
+    border-radius: 8px;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+.btn-github:hover {
+    background-color: #0F172A;
+    color: white;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 0;
+    color: #94A3B8;
+    font-size: 0.8rem;
+}
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #E2E8F0;
+}
+.divider:not(:empty)::before {
+    margin-right: 1rem;
+}
+.divider:not(:empty)::after {
+    margin-left: 1rem;
+}
+
+.form-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 0.5rem;
+}
+.form-label .required {
+    color: #EF4444; /* Red asterisk */
+}
+.form-control {
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    color: #0F172A;
+}
+.form-control::placeholder {
+    color: #94A3B8;
+}
+.form-control:focus {
+    border-color: #0EA5E9;
+    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+}
+
+.password-input-wrapper {
+    position: relative;
+}
+.password-toggle {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #64748B;
+    cursor: pointer;
+}
+
+.terms-check {
+    font-size: 0.8rem;
+    color: #475569;
+}
+.terms-check a {
+    color: #0EA5E9;
+    text-decoration: underline;
+}
+
+.btn-submit {
+    background-color: #059669; /* Exact green from screenshot */
+    color: white;
+    font-weight: 700;
+    padding: 0.75rem;
+    border-radius: 8px;
+    width: 100%;
+    border: none;
+    transition: background-color 0.2s;
+}
+.btn-submit:hover {
+    background-color: #047857;
+}
+
+.login-link {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #475569;
+    margin-top: 1.5rem;
+}
+.login-link a {
+    color: #0EA5E9;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* Logos & Minimal Footer */
+.logo-strip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    opacity: 0.5;
+    filter: grayscale(100%);
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+}
+.logo-strip img {
+    height: 30px;
+}
+.logo-strip img.large-logo {
+    height: 45px;
+}
+
+.minimal-footer {
+    border-top: 1px solid #E2E8F0;
+    padding: 2rem 0;
+    margin-top: auto;
+    font-size: 0.8rem;
+    color: #64748B;
+}
+.minimal-footer a {
+    color: #64748B;
+    text-decoration: none;
+    margin-left: 1.5rem;
+}
+.minimal-footer a:hover {
+    color: #0F172A;
+}
