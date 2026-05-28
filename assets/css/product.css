@@ -115,16 +115,17 @@ body {
 .tabs-nav {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 1.5rem;
 }
 .tab-item {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #a0aec0;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #71717a;
     cursor: pointer;
     transition: color 0.2s;
     position: relative;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
+    line-height: 1.2;
 }
 .tab-item.active {
     color: #1a1a1a;
@@ -134,8 +135,8 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    bottom: 0;
-    width: 3px;
+    height: 1.2em;
+    width: 4px;
     background-color: #2563eb;
 }
 .tab-item.active-purple::before {
@@ -143,8 +144,8 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    bottom: 0;
-    width: 3px;
+    height: 1.2em;
+    width: 4px;
     background-color: #7c3aed;
 }
 .tab-item.active-green::before {
@@ -152,15 +153,16 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    bottom: 0;
-    width: 3px;
+    height: 1.2em;
+    width: 4px;
     background-color: #059669;
 }
 .tab-desc {
-    font-size: 0.95rem;
-    color: #4a5568;
-    margin-top: 0.5rem;
-    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1a1a1a;
+    margin-top: 1rem;
+    line-height: 1.6;
 }
 
 .tab-image {
