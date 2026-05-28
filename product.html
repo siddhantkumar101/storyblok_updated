@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Storyblok - Product Features</title>
+    <title>Storyblok - Headless CMS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/home.css">
@@ -58,222 +58,430 @@
         </nav>
     </header>
     
-    <!-- Page Content -->
     <main class="container-fluid p-0">
         
-        <!-- Product Hero Section -->
-        <section class="product-hero">
-            <div class="container text-center">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <span class="badge text-bg-primary bg-opacity-10 text-primary mb-3 px-3 py-2 rounded-pill fw-semibold">Introducing Storyblok 2.0</span>
-                        <h1 class="product-hero-title mb-4">
-                            The CMS that adapts to <span class="text-highlight">your stack</span>
+        <!-- Hero Section -->
+        <section class="py-5 overflow-hidden">
+            <div class="container mt-4">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 pe-lg-5">
+                        <h1 class="display-4 mb-4">
+                            <span class="text-purple">Joyful Headless</span><br>
+                            means bigger,<br>
+                            faster market<br>
+                            impact <span class="fs-2 text-purple">💎</span>
                         </h1>
-                        <p class="product-hero-subtitle mb-5">
-                            Stop compromising. Get the power of an enterprise headless CMS with the intuitive editing experience your marketing team demands.
+                        <p class="fs-6 mb-4 text-secondary">
+                            Meet the enterprise-ready CMS that marketers and developers love because it gives them:
                         </p>
-                        <div class="d-flex gap-3 justify-content-center">
-                            <a class="btn btn-dark btn-lg px-4" href="#get-started">Start Building Now</a>
-                            <a class="btn btn-outline-dark btn-lg px-4" href="#documentation">View Docs</a>
+                        <div class="d-flex gap-3">
+                            <a href="#try" class="btn btn-yellow fw-bold px-4 py-2 rounded-2">Try for Free</a>
+                            <a href="#demo" class="btn btn-outline-dark fw-bold px-4 py-2 rounded-2 border-2">Get a Demo</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 position-relative mt-5 mt-lg-0">
+                        <div class="hero-blob-bg"></div>
+                        <div class="hero-image-wrapper p-3">
+                            <img src="assets/img/hero-visual-editor-ai-mcp.png" alt="Storyblok Editor" class="img-fluid bg-white p-2 border">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Product Features Section -->
-        <section class="product-feature-section">
+        <!-- Features 3 Columns -->
+        <section class="py-5 mb-4">
             <div class="container">
-                <div class="text-center mb-5">
-                    <h2 class="fw-bold mb-3">Everything you need to ship faster</h2>
-                    <p class="text-muted fs-5">Built for modern digital experiences, designed for teams.</p>
+                <div class="row g-4 g-lg-5">
+                    <div class="col-md-4">
+                        <h4 class="feature-list-header d-flex align-items-center">
+                            <i class="bi bi-rocket-takeoff text-blue me-2"></i> More speed
+                        </h4>
+                        <ul class="list-unstyled feature-list">
+                            <li class="mb-3 d-flex"><i class="bi bi-asterisk text-blue me-2 mt-1 fs-6"></i> <div><strong>Build faster, launch smarter.</strong> Outpace and outwit the competition with reusable building blocks.</div></li>
+                            <li class="mb-3 d-flex"><i class="bi bi-asterisk text-blue me-2 mt-1 fs-6"></i> <div><strong>From ideas to content to market - faster.</strong> Run circles around the legacy-bound competition.</div></li>
+                            <li class="mb-3 d-flex"><i class="bi bi-asterisk text-blue me-2 mt-1 fs-6"></i> <div><strong>Streamline your stack, empower your teams.</strong> Unlock faster, bigger digital impact.</div></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="feature-list-header d-flex align-items-center">
+                            <i class="bi bi-shuffle text-salmon me-2"></i> More agility
+                        </h4>
+                        <ul class="list-unstyled feature-list">
+                            <li class="mb-3 d-flex"><i class="bi bi-asterisk text-salmon me-2 mt-1 fs-6"></i> <div><strong>Ready for any market, any moment, any channel.</strong> Pivot, adapt, scale up, and reach all audiences with ease.</div></li>
+                            <li class="mb-3 d-flex"><i class="bi bi-asterisk text-salmon me-2 mt-1 fs-6"></i> <div><strong>Build your way, no compromises.</strong> Unleash full frontend freedom with the tools you choose.</div></li>
+                            <li class="mb-3 d-flex"><i class="bi bi-asterisk text-salmon me-2 mt-1 fs-6"></i> <div><strong>Scalable, accessible, performant.</strong> Global scalability meets top-tier performance and full accessibility.</div></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="feature-list-header d-flex align-items-center">
+                            <i class="bi bi-diagram-3 text-green me-2"></i> More control
+                        </h4>
+                        <ul class="list-unstyled feature-list">
+                            <li class="mb-3 d-flex"><i class="bi bi-asterisk text-green me-2 mt-1 fs-6"></i> <div><strong>Own the entire content lifecycle.</strong> Stay on-brand, on-strategy and accessible-always.</div></li>
+                            <li class="mb-3 d-flex"><i class="bi bi-asterisk text-green me-2 mt-1 fs-6"></i> <div><strong>Your stack, your way.</strong> Build with freedom, add with precision.</div></li>
+                            <li class="mb-3 d-flex"><i class="bi bi-asterisk text-green me-2 mt-1 fs-6"></i> <div><strong>Trusted by industry leaders.</strong> Unlock speed, security, and seamless scalability.</div></li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Marketers Section -->
+        <section class="py-5 mt-5">
+            <div class="container">
+                <div class="d-inline-flex align-items-center text-blue fw-bold mb-3">
+                    <i class="bi bi-megaphone me-2"></i> Marketers
+                </div>
+                <h2 class="display-5 mb-4">Create insanely <span class="text-blue">great customer experiences</span></h2>
+                <p class="fs-6 text-secondary col-lg-8 mb-5">
+                    Storyblok empowers marketers to get new ideas, offers, campaigns and digital experiences to market faster than ever - without having to involve dev at every little step.
+                </p>
+                <hr class="border-secondary mb-5 opacity-25">
+                
+                <div class="row g-5">
+                    <div class="col-md-6">
+                        <h4 class="fw-bold mb-4">Get more ideas to market - faster</h4>
+                        <ul class="list-unstyled feature-list-large">
+                            <li class="d-flex mb-4">
+                                <i class="bi bi-stickies text-blue fs-5 me-3 mt-1"></i>
+                                <div><strong>Build, test and update content in minutes</strong> - without dev support. Iterate faster. Update more often. Respond to market changes.</div>
+                            </li>
+                            <li class="d-flex mb-4">
+                                <i class="bi bi-window-desktop text-blue fs-5 me-3 mt-1"></i>
+                                <div><strong>Take control of the customer experience</strong> with our pioneering Visual Editor. See changes in real time for faster decision-making.</div>
+                            </li>
+                            <li class="d-flex mb-4">
+                                <i class="bi bi-lightbulb text-blue fs-5 me-3 mt-1"></i>
+                                <div><strong>Seize new opportunities</strong> - grow into new markets, channels, products, and regions without re-inventing the wheel.</div>
+                            </li>
+                            <li class="d-flex mb-4">
+                                <i class="bi bi-people text-blue fs-5 me-3 mt-1"></i>
+                                <div><strong>Collaborate throughout the content lifecycle</strong> - from idea to publishing, using the Ideation Room and in-app collaboration and workflows.</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="fw-bold mb-4">Freedom to own the content lifecycle</h4>
+                        <ul class="list-unstyled feature-list-large">
+                            <li class="d-flex mb-4">
+                                <i class="bi bi-puzzle text-blue fs-5 me-3 mt-1"></i>
+                                <div><strong>Integrate the tools you love</strong> - e-Commerce, CRM, SEO, personalization, automation... anything your business needs.</div>
+                            </li>
+                            <li class="d-flex mb-4">
+                                <i class="bi bi-translate text-blue fs-5 me-3 mt-1"></i>
+                                <div><strong>Translate and localize content fast</strong> - supporting as many versions as you need</div>
+                            </li>
+                            <li class="d-flex mb-4">
+                                <i class="bi bi-display text-blue fs-5 me-3 mt-1"></i>
+                                <div><strong>Deliver content consistently across channels</strong> - web, mobile, kiosks, apps, and social platforms.</div>
+                            </li>
+                            <li class="d-flex mb-4">
+                                <i class="bi bi-shield-check text-blue fs-5 me-3 mt-1"></i>
+                                <div><strong>View, control, and manage workflows</strong> across different users and teams for faster collaboration and content approval cycles.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Tabs Block -->
+                <div class="tabs-block bg-light-blue">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4">
+                            <div class="tabs-nav">
+                                <div class="tab-item active active-blue">
+                                    Visual Editor
+                                    <div class="tab-desc">Creativity's best friend! Craft your content and instantly see how it looks - right as you work.<br><strong>Your magic window to the content you create.</strong></div>
+                                </div>
+                                <div class="tab-item">Ideation Room</div>
+                                <div class="tab-item">Localization</div>
+                                <div class="tab-item">Collaboration</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 mt-4 mt-lg-0">
+                            <img src="assets/img/visual-editor-marketers-orange.png" alt="Visual Editor" class="img-fluid tab-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Developers Section -->
+        <section class="py-5 mt-5">
+            <div class="container">
+                <div class="d-inline-flex align-items-center text-purple fw-bold mb-3">
+                    <i class="bi bi-code-slash me-2"></i> Developers
+                </div>
+                <h2 class="display-5 mb-4">The CMS built by <span class="text-purple">devs for devs</span></h2>
+                <p class="fs-6 text-secondary col-lg-8 mb-5">
+                    The API-first, headless CMS that lets you choose your preferred front-end frameworks, integrate seamlessly with your favorite tools, and empower marketers to ship exceptional digital experiences.
+                </p>
+                <hr class="border-secondary mb-5 opacity-25">
+                
+                <div class="row g-5">
+                    <div class="col-md-6">
+                        <h4 class="fw-bold mb-4">Faster builds, easier hand-offs, maximum re-usability</h4>
+                        <ul class="list-unstyled feature-list-large">
+                            <li class="d-flex mb-4">
+                                <i class="bi bi-box text-purple fs-5 me-3 mt-1"></i>
+                                <div><strong>Rapidly assemble and reassemble</strong> - modular, reusable components save time on every project.</div>
+                            </li>
+                            <li class="d-flex mb-4">
+                                <i class="bi bi-cone-striped text-purple fs-5 me-3 mt-1"></i>
+                                <div><strong>Test, stage, deploy:</strong> Instantly - continuous improvement made easy.</div>
+                            </li>
+                            <li class="d-flex mb-4">
+                                <i class="bi bi-cloud text-purple fs-5 me-3 mt-1"></i>
+                                <div><strong>Access fast front-end hosting options</strong> like Netlify and Vercel for high performance right out of the box.</div>
+                            </li>
+                            <li class="d-flex mb-4">
+                                <i class="bi bi-lightning text-purple fs-5 me-3 mt-1"></i>
+                                <div><strong>Speed up your builds and optimize your products</strong> with Storyblok's Management API, Content Delivery API, and GraphQL API.</div>
+                            </li>
+                            <li class="d-flex mb-4">
+                                <i class="bi bi-boxes text-purple fs-5 me-3 mt-1"></i>
+                                <div><strong>Atomic design principles</strong> let you use nestable, component-based data structures - for easy repurposing across any digital channel.</div>
+                            </li>
+                            <li class="d-flex mb-4">
+                                <i class="bi bi-arrow-repeat text-purple fs-5 me-3 mt-1"></i>
+                                <div><strong>Pivot projects easily as needs change</strong> - without full system overhauls.</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="fw-bold mb-4">Freedom to choose how you move and build</h4>
+                        <ul class="list-unstyled feature-list-large">
+                            <li class="d-flex mb-4">
+                                <i class="bi bi-grid-3x3-gap text-purple fs-5 me-3 mt-1"></i>
+                                <div><strong>Choose the latest frameworks and tools</strong> freely to stay ahead of tech trends.</div>
+                            </li>
+                            <li class="d-flex mb-4">
+                                <i class="bi bi-sliders text-purple fs-5 me-3 mt-1"></i>
+                                <div><strong>Streamline and customize your stack</strong> using only the features you need - without paying for unused features.</div>
+                            </li>
+                            <li class="d-flex mb-4">
+                                <i class="bi bi-code-slash text-purple fs-5 me-3 mt-1"></i>
+                                <div><strong>Swap out tools & frameworks at will</strong> - that's the power of Headless and API-first: total freedom.</div>
+                            </li>
+                            <li class="d-flex mb-4">
+                                <i class="bi bi-shield-lock text-purple fs-5 me-3 mt-1"></i>
+                                <div><strong>Manage access precisely,</strong> controlling permissions and authorizations down to individual fields.</div>
+                            </li>
+                            <li class="d-flex mb-4">
+                                <i class="bi bi-rocket text-purple fs-5 me-3 mt-1"></i>
+                                <div><strong>Empower marketers and editors</strong> to move faster - but in total confidence and safety.</div>
+                            </li>
+                            <li class="d-flex mb-4">
+                                <i class="bi bi-people text-purple fs-5 me-3 mt-1"></i>
+                                <div><strong>Work seamlessly with teams,</strong> integrating the right tools, collaborating in real time, and adapting workflows as needed.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Tabs Block -->
+                <div class="tabs-block bg-light-purple">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4">
+                            <div class="tabs-nav">
+                                <div class="tab-item active active-purple">
+                                    Reusable components
+                                    <div class="tab-desc">Reusable components are your building blocks - create once, use everywhere, and keep your projects consistent.</div>
+                                </div>
+                                <div class="tab-item">API-first</div>
+                                <div class="tab-item">Frontend SDKs</div>
+                                <div class="tab-item">Central Content Hub</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 mt-4 mt-lg-0">
+                            <img src="assets/img/developers-bg.png" alt="Developer Tools" class="img-fluid tab-image bg-white p-2 border">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enterprises Section -->
+        <section class="py-5 mt-5">
+            <div class="container">
+                <div class="d-inline-flex align-items-center text-green fw-bold mb-3">
+                    <i class="bi bi-building me-2"></i> Enterprises
+                </div>
+                <h2 class="display-5 mb-4">Enterprise-ready <span class="text-green">(without the bloat)</span></h2>
+                <p class="fs-6 text-secondary col-lg-8 mb-5">
+                    Storyblok's component-based architecture means enterprises can get kick-ass digital experiences to market faster - and react with ninja-reflexes to every small market shift.
+                </p>
+                <hr class="border-secondary mb-5 opacity-25">
+                
+                <div class="row g-5">
+                    <div class="col-md-6">
+                        <h4 class="fw-bold mb-4">Global scalability meets performance and accessibility</h4>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="fw-bold mb-4">A CMS that everyone can use - securely</h4>
+                    </div>
+                </div>
+                
+                <!-- Tabs Block -->
+                <div class="tabs-block bg-light-green mt-4">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5">
+                            <div class="tabs-nav">
+                                <div class="tab-item active active-green">
+                                    ISO 27001 of course
+                                    <div class="tab-desc">Your data's bodyguard - ensuring top-tier security, trust, and compliance for peace of mind.</div>
+                                </div>
+                                <div class="tab-item">Global CDN</div>
+                                <div class="tab-item">Custom workflows</div>
+                                <div class="tab-item">Digital Asset Manager</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 mt-4 mt-lg-0 position-relative">
+                            <img src="assets/img/jawaad-qureshi.png" alt="Enterprise Security" class="img-fluid tab-image w-100" style="object-fit: cover; height: 300px;">
+                            <div class="position-absolute bottom-0 start-0 m-4 bg-dark text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; z-index: 2;">
+                                <i class="bi bi-globe2 fs-4"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CMS Envy Section -->
+        <section class="cms-envy-section mt-5">
+            <div class="container">
+                <h2 class="display-6 fw-bolder mb-2">Prepare for some CMS-envy</h2>
+                <p class="text-secondary mb-5">The coolest companies are the most Joyful:</p>
                 
                 <div class="row g-4">
                     <div class="col-md-4">
-                        <div class="feature-box">
-                            <div class="feature-icon-wrapper">
-                                <i class="bi bi-lightning-charge-fill"></i>
+                        <div class="case-card">
+                            <div class="case-img-container">
+                                <img src="assets/img/nrf-cs-masked.png" alt="Education First">
+                                <img src="assets/img/svgs/education-first.svg" class="case-logo" alt="EF">
                             </div>
-                            <h4 class="fw-bold mb-3">Lightning Fast APIs</h4>
-                            <p class="text-muted mb-0">Deliver content globally in milliseconds with our heavily optimized GraphQL and REST APIs backed by an enterprise CDN.</p>
+                            <div class="case-content">
+                                <h3 class="case-title">Education First</h3>
+                                <p class="case-text">Explore how Education First built a global site with <strong>9000+ pages and 54+ language</strong> variations.</p>
+                                <div class="case-arrow"><i class="bi bi-arrow-right"></i></div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="feature-box">
-                            <div class="feature-icon-wrapper">
-                                <i class="bi bi-layout-wtf"></i>
+                        <div class="case-card">
+                            <div class="case-img-container">
+                                <img src="assets/img/oatly-case.png" alt="Oatly">
+                                <img src="assets/img/svgs/oatly.svg" class="case-logo" alt="Oatly">
                             </div>
-                            <h4 class="fw-bold mb-3">Visual Editor</h4>
-                            <p class="text-muted mb-0">Give editors real-time visual previews of exactly how their content will look on any device before they publish.</p>
+                            <div class="case-content">
+                                <h3 class="case-title">Oatly</h3>
+                                <p class="case-text">See how Oatly's digital experiences fueled three consecutive years of <strong>triple-digit growth.</strong></p>
+                                <div class="case-arrow"><i class="bi bi-arrow-right"></i></div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="feature-box">
-                            <div class="feature-icon-wrapper">
-                                <i class="bi bi-boxes"></i>
+                        <div class="case-card">
+                            <div class="case-img-container">
+                                <img src="assets/img/cs-octopus-energy.png" alt="Marc O'Polo">
+                                <img src="assets/img/svgs/marcopolo-logo.svg" class="case-logo" alt="Marc O'Polo">
                             </div>
-                            <h4 class="fw-bold mb-3">Component-Based</h4>
-                            <p class="text-muted mb-0">Build reusable content blocks that map perfectly to your frontend framework components (React, Vue, Svelte, etc).</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="feature-box">
-                            <div class="feature-icon-wrapper">
-                                <i class="bi bi-globe2"></i>
+                            <div class="case-content">
+                                <h3 class="case-title">Marc O'Polo</h3>
+                                <p class="case-text">Find out how Marc O'Polo built and implemented their global <strong>eCommerce shop in just 14 days.</strong></p>
+                                <div class="case-arrow"><i class="bi bi-arrow-right"></i></div>
                             </div>
-                            <h4 class="fw-bold mb-3">Localization Built-in</h4>
-                            <p class="text-muted mb-0">Manage global content effortlessly with field-level translation, folder-based localization, and powerful fallback rules.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="feature-box">
-                            <div class="feature-icon-wrapper">
-                                <i class="bi bi-shield-check"></i>
-                            </div>
-                            <h4 class="fw-bold mb-3">Enterprise Security</h4>
-                            <p class="text-muted mb-0">Rest easy with ISO 27001 certification, SSO integration, granular user permissions, and custom workflows.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="feature-box">
-                            <div class="feature-icon-wrapper">
-                                <i class="bi bi-robot"></i>
-                            </div>
-                            <h4 class="fw-bold mb-3">AI & Automations</h4>
-                            <p class="text-muted mb-0">Accelerate content creation with native AI tools, and streamline operations with webhooks and native integrations.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Pricing Section -->
-        <section class="pricing-section">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <h2 class="fw-bold mb-3 text-white">Simple, transparent pricing</h2>
-                    <p class="text-white-50 fs-5">Start for free, scale when you need to.</p>
-                </div>
-
-                <div class="row justify-content-center g-4">
-                    <!-- Community Plan -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="pricing-card h-100">
-                            <h3 class="fw-bold text-white mb-2">Community</h3>
-                            <p class="text-white-50">Perfect for personal projects</p>
-                            <div class="price-display text-white">
-                                <span class="price-currency">$</span>0<span class="price-period">/mo</span>
-                            </div>
-                            <ul class="list-unstyled pricing-features mt-4 mb-5 text-start">
-                                <li><i class="bi bi-check-circle-fill"></i> 1 Seat included</li>
-                                <li><i class="bi bi-check-circle-fill"></i> 250GB Bandwidth</li>
-                                <li><i class="bi bi-check-circle-fill"></i> Community Support</li>
-                                <li><i class="bi bi-check-circle-fill"></i> Core API Access</li>
-                            </ul>
-                            <a href="#" class="btn btn-outline-light w-100 py-2">Get Started</a>
-                        </div>
+        <!-- CTA Section -->
+        <section class="py-5 bg-light-blue" style="background-color: #f8fafc !important;">
+            <div class="container py-5">
+                <h2 class="display-6 fw-bolder text-center mb-2">Ready to start? Joy awaits.</h2>
+                <p class="text-secondary text-center mb-5">Experience why Storyblok is scientifically proven to bring joy (at least to 83% of users).</p>
+                
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-5">
+                        <a href="#try" class="cta-card">
+                            <i class="bi bi-stars cta-icon"></i>
+                            <h3 class="cta-title">Try for Free</h3>
+                            <p class="cta-text">Create your free account to start building in just 5 minutes.</p>
+                            <div class="cta-arrow"><i class="bi bi-arrow-right"></i></div>
+                        </a>
                     </div>
-
-                    <!-- Entry Plan (Featured) -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="pricing-card featured h-100">
-                            <h3 class="fw-bold text-white mb-2">Entry</h3>
-                            <p class="text-white-50">For growing teams</p>
-                            <div class="price-display text-white">
-                                <span class="price-currency">$</span>99<span class="price-period">/mo</span>
-                            </div>
-                            <ul class="list-unstyled pricing-features mt-4 mb-5 text-start">
-                                <li><i class="bi bi-check-circle-fill"></i> 5 Seats included</li>
-                                <li><i class="bi bi-check-circle-fill"></i> 1TB Bandwidth</li>
-                                <li><i class="bi bi-check-circle-fill"></i> Email Support</li>
-                                <li><i class="bi bi-check-circle-fill"></i> Visual Editor</li>
-                                <li><i class="bi bi-check-circle-fill"></i> Custom Roles</li>
-                            </ul>
-                            <a href="#" class="btn btn-primary w-100 py-2 border-0" style="background-color: #4f46e5;">Start 14-Day Trial</a>
-                        </div>
+                    <div class="col-md-6 col-lg-5">
+                        <a href="#demo" class="cta-card">
+                            <i class="bi bi-calendar-check cta-icon text-dark"></i>
+                            <h3 class="cta-title">Get a Demo</h3>
+                            <p class="cta-text">Schedule a free personalized walkthrough to discuss your goals.</p>
+                            <div class="cta-arrow"><i class="bi bi-arrow-right"></i></div>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Footer -->
-        <footer class="site-footer py-5">
-            <div class="container">
-                <div class="footer-divider mb-5"></div>
+        <footer class="site-footer py-5 border-top">
+            <div class="container mt-4">
                 <div class="row g-4">
                     <div class="col-6 col-md-4 col-lg">
-                        <h3>Platform</h3>
-                        <ul class="footer-links">
-                            <li><a href="product.html">Product</a></li>
-                            <li><a href="why-storyblok.html">Why Storyblok</a></li>
-                            <li><a href="#storyblok-labs">Storyblok Labs</a></li>
-                            <li><a href="#ecosystem">Ecosystem</a></li>
-                            <li><a href="#app-directory">App Directory</a></li>
-                            <li><a href="#roadmap">Roadmap</a></li>
-                            <li><a href="#headless-cms">What is Headless CMS</a></li>
+                        <h6 class="fw-bold mb-3">Platform</h6>
+                        <ul class="list-unstyled feature-list text-secondary">
+                            <li><a href="product.html" class="text-decoration-none text-secondary">Product</a></li>
+                            <li><a href="why-storyblok.html" class="text-decoration-none text-secondary">Why Storyblok</a></li>
+                            <li><a href="#" class="text-decoration-none text-secondary">Storyblok Labs</a></li>
+                            <li><a href="#" class="text-decoration-none text-secondary">Ecosystem</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-md-4 col-lg">
-                        <h3>Solutions</h3>
-                        <ul class="footer-links">
-                            <li><a href="#enterprise">Enterprise</a></li>
-                            <li><a href="#developers">Developers</a></li>
-                            <li><a href="#marketers">Marketers</a></li>
-                            <li><a href="#mach">MACH Alliance</a></li>
-                            <li><a href="#roi">ROI Calculator</a></li>
+                        <h6 class="fw-bold mb-3">Solutions</h6>
+                        <ul class="list-unstyled feature-list text-secondary">
+                            <li><a href="#" class="text-decoration-none text-secondary">Enterprise</a></li>
+                            <li><a href="#" class="text-decoration-none text-secondary">Developers</a></li>
+                            <li><a href="#" class="text-decoration-none text-secondary">Marketers</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-md-4 col-lg">
-                        <h3>Developers</h3>
-                        <ul class="footer-links">
-                            <li><a href="#quick-start">Quick Start</a></li>
-                            <li><a href="#guides">Developer Guides</a></li>
-                            <li><a href="#tutorials">Developer Tutorials</a></li>
-                            <li><a href="#api-docs">API Documentation</a></li>
-                            <li><a href="#changelog">Changelog</a></li>
-                            <li><a href="#nextjs">Next.js guide</a></li>
-                            <li><a href="#nuxt">Nuxt guide</a></li>
-                            <li><a href="#react">React guide</a></li>
+                        <h6 class="fw-bold mb-3">Developers</h6>
+                        <ul class="list-unstyled feature-list text-secondary">
+                            <li><a href="#" class="text-decoration-none text-secondary">Quick Start</a></li>
+                            <li><a href="#" class="text-decoration-none text-secondary">Developer Guides</a></li>
+                            <li><a href="#" class="text-decoration-none text-secondary">API Documentation</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-md-4 col-lg">
-                        <h3>Resources</h3>
-                        <ul class="footer-links">
-                            <li><a href="#contact-sales">Contact Sales</a></li>
-                            <li><a href="#blog">Blog</a></li>
-                            <li><a href="#whitepapers">Whitepapers</a></li>
-                            <li><a href="#case-studies">Case Studies</a></li>
-                            <li><a href="#webinars">Webinars & Events</a></li>
-                            <li><a href="#editor-guides">Content Editor Guides</a></li>
-                            <li><a href="#support">Services & Support</a></li>
+                        <h6 class="fw-bold mb-3">Resources</h6>
+                        <ul class="list-unstyled feature-list text-secondary">
+                            <li><a href="#" class="text-decoration-none text-secondary">Contact Sales</a></li>
+                            <li><a href="#" class="text-decoration-none text-secondary">Blog</a></li>
+                            <li><a href="#" class="text-decoration-none text-secondary">Case Studies</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-md-4 col-lg">
-                        <h3>Company</h3>
-                        <ul class="footer-links">
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="#careers">Careers <span class="badge text-bg-dark">25+</span></a></li>
-                            <li><a href="#press">Press</a></li>
-                            <li><a href="#trust">Trust Center</a></li>
-                            <li><a href="#terms">Terms and Conditions</a></li>
-                            <li><a href="#legal">Legal Notice</a></li>
-                            <li><a href="#privacy">Privacy Policy</a></li>
-                            <li><a href="#cookies">Cookie Settings</a></li>
+                        <h6 class="fw-bold mb-3">Company</h6>
+                        <ul class="list-unstyled feature-list text-secondary">
+                            <li><a href="#" class="text-decoration-none text-secondary">About</a></li>
+                            <li><a href="#" class="text-decoration-none text-secondary">Careers <span class="badge bg-dark rounded-pill">10+</span></a></li>
+                            <li><a href="#" class="text-decoration-none text-secondary">Press</a></li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="footer-bottom d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 pt-5">
-                    <p class="mb-0">Copyright 2017-2026 Storyblok GmbH</p>
-                    <a href="#top" class="footer-brand text-decoration-none"><i class="bi bi-square-fill"></i> storyblok</a>
-                    <div class="footer-social d-flex gap-3">
-                        <a href="#x" aria-label="X"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#github" aria-label="GitHub"><i class="bi bi-github"></i></a>
-                        <a href="#linkedin" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                        <a href="#youtube" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-                        <a href="#instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-5 pt-4 border-top">
+                    <small class="text-secondary">Copyright &copy; 2017-2026 Storyblok GmbH</small>
+                    <div class="d-flex gap-2">
+                        <i class="bi bi-square-fill fs-5"></i> <span class="fw-bold fs-5">storyblok</span>
+                    </div>
+                    <div class="d-flex gap-3 text-secondary">
+                        <i class="bi bi-twitter-x"></i>
+                        <i class="bi bi-github"></i>
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-youtube"></i>
+                        <i class="bi bi-instagram"></i>
                     </div>
                 </div>
             </div>
