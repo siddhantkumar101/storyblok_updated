@@ -5,7 +5,7 @@ body {
     color: #1a1a1a;
 }
 
-/* Typography Overrides for this page */
+/* Typography Overrides */
 .display-4, .display-5 {
     font-weight: 800;
     color: #0F172A;
@@ -16,50 +16,58 @@ body {
     color: #475569;
     line-height: 1.6;
 }
-.text-green-brand { color: #5BDB15; } /* Bright green for headings */
+.text-green-brand { color: #5BDB15; }
 .text-blue-brand { color: #2563EB; }
 .text-purple-brand { color: #7C3AED; }
 .text-orange-brand { color: #EA580C; }
 
 /* Blob Backgrounds */
 .blob-green {
-    background-color: #E6FBAE; /* Light lime green */
+    background-color: #E6FBAE;
     border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
     z-index: -1;
 }
+.blob-blue-accent {
+    background-color: #93C5FD;
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+}
+.blob-green-accent {
+    background-color: #A3E635;
+    border-radius: 60% 40% 30% 70% / 50% 60% 40% 50%;
+}
 
 /* Sections Backgrounds */
-.bg-security { background-color: #E0F2FE; } /* Light Blue */
-.bg-control { background-color: #DCFCE7; } /* Light Green */
-.bg-agility { background-color: #EDE9FE; } /* Light Purple */
-.bg-speed { background-color: #FEF3C7; } /* Light Yellow */
+.bg-security { background-color: #E0F2FE; }
+.bg-control { background-color: #DCFCE7; }
+.bg-agility { background-color: #EDE9FE; }
+.bg-speed { background-color: #FEF3C7; }
 
 .bg-dark-banner {
     background-color: #1E293B;
     color: white;
     border-radius: 20px;
-    padding: 3rem;
+    padding: 3.5rem 4rem;
 }
 
 /* "Chapters" Navigation */
 .chapter-item {
-    padding: 1.5rem;
-    border-bottom: 1px solid #E2E8F0;
+    padding: 1.5rem 0;
 }
 .chapter-icon {
-    font-size: 1.25rem;
-    margin-right: 1rem;
-    color: #059669; /* Dark green icon */
+    font-size: 1.5rem;
+    margin-right: 1.25rem;
+    color: #059669;
 }
 .chapter-title {
-    font-weight: 700;
+    font-weight: 800;
     color: #0F172A;
     margin-bottom: 0.25rem;
 }
 .chapter-desc {
     color: #475569;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     line-height: 1.5;
+    margin-bottom: 0.5rem;
 }
 .chapter-link {
     font-size: 0.85rem;
@@ -73,41 +81,41 @@ body {
     color: #059669;
 }
 
-/* Feature Cards (White cards inside colored sections) */
+/* Feature Cards (White cards) */
 .feature-card {
     background: white;
     border-radius: 12px;
-    padding: 2rem;
+    padding: 2.5rem 2rem;
     height: 100%;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
 .feature-card-icon {
-    width: 40px;
-    height: 40px;
-    background: #F8FAFC;
-    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    background: transparent;
+    border: 1.5px solid #E2E8F0;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1.5rem;
-    font-size: 1.25rem;
-    color: #0F172A;
+    font-size: 1.5rem;
+    color: #64748B;
 }
 .feature-card h4 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 800;
     margin-bottom: 0.5rem;
     color: #0F172A;
 }
 .feature-card .subtitle {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-style: italic;
     color: #64748B;
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
     display: block;
 }
 .feature-card p {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     color: #475569;
     line-height: 1.6;
     margin-bottom: 0;
@@ -117,10 +125,11 @@ body {
 .large-feature-card {
     background: #F8FAFC;
     border-radius: 20px;
-    padding: 3rem;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    overflow: hidden;
+}
+.large-feature-card-content {
+    padding: 3rem;
 }
 .large-feature-card h3 {
     font-size: 1.75rem;
@@ -132,18 +141,13 @@ body {
     font-size: 0.9rem;
     color: #475569;
     line-height: 1.6;
-    margin-bottom: 2rem;
-}
-.large-feature-card img {
-    margin-top: auto;
-    width: 100%;
-    border-radius: 12px;
+    margin-bottom: 0;
 }
 
 /* Customer Stories Grid */
 .story-card {
     border: 1px solid #E2E8F0;
-    border-radius: 16px;
+    border-radius: 20px;
     overflow: hidden;
     height: 100%;
     display: flex;
@@ -151,22 +155,22 @@ body {
     background: white;
 }
 .story-card-img {
-    height: 200px;
+    height: 240px;
     object-fit: cover;
     width: 100%;
 }
 .story-card-body {
-    padding: 2rem;
+    padding: 2.5rem;
     flex-grow: 1;
 }
 .story-card h4 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 800;
     margin-bottom: 1rem;
     color: #0F172A;
 }
 .story-card p {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     color: #475569;
     line-height: 1.6;
     margin-bottom: 0;
@@ -175,41 +179,40 @@ body {
 /* Tech Partnerships Logos */
 .tech-partners {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
-    padding: 2rem 0;
     border-top: 1px solid #E2E8F0;
     border-bottom: 1px solid #E2E8F0;
+    margin-top: 3rem;
 }
 .tech-partner-item {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 3rem 1rem;
+    border-right: 1px dashed #CBD5E1;
     color: #0F172A;
-    font-weight: 700;
-    font-size: 0.8rem;
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+.tech-partner-item:last-child {
+    border-right: none;
 }
 .tech-partner-item img {
-    height: 40px;
-    margin-bottom: 1rem;
-    /* Simulate the logos if not available */
+    height: 48px;
+    margin-bottom: 1.5rem;
 }
-.tech-partner-item.more-box {
-    justify-content: center;
-    background: #E0F2FE;
-    width: 60px;
-    height: 60px;
-    border-radius: 12px;
-    margin-bottom: 1rem;
+.tech-partner-item .logo-placeholder {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 /* CTA Cards */
 .cta-outline-card {
     border: 2px solid #0F172A;
-    border-radius: 20px;
-    padding: 3rem 2rem;
-    text-align: center;
+    border-radius: 24px;
+    padding: 3.5rem 3rem;
     position: relative;
     height: 100%;
     background: white;
@@ -217,6 +220,7 @@ body {
     text-decoration: none;
     display: block;
     color: inherit;
+    text-align: left;
 }
 .cta-outline-card:hover {
     transform: translateY(-5px);
@@ -229,15 +233,17 @@ body {
     margin-bottom: 1rem;
 }
 .cta-outline-card p {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     color: #475569;
+    line-height: 1.6;
+    width: 80%;
 }
 .cta-arrow-circle {
     position: absolute;
     bottom: 2rem;
     right: 2rem;
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     border: 1px solid #0F172A;
     border-radius: 50%;
     display: flex;
@@ -250,9 +256,9 @@ body {
 .section-tag {
     display: inline-flex;
     align-items: center;
-    font-weight: 700;
-    font-size: 0.85rem;
-    margin-bottom: 1rem;
+    font-weight: 800;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
 }
 .section-tag i {
     margin-right: 0.5rem;
