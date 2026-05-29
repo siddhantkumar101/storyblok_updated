@@ -1,8 +1,11 @@
 /* enterprise.css */
 
+html,
 body {
     font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     color: #1a1a1a;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 /* Typography Overrides */
@@ -46,7 +49,12 @@ body {
     background-color: #1E293B;
     color: white;
     border-radius: 20px;
-    padding: 3.5rem 4rem;
+    padding: 2.5rem 1.5rem;
+}
+@media (min-width: 768px) {
+    .bg-dark-banner {
+        padding: 3.5rem 4rem;
+    }
 }
 
 /* "Chapters" Navigation */
@@ -85,8 +93,13 @@ body {
 .feature-card {
     background: white;
     border-radius: 12px;
-    padding: 2.5rem 2rem;
+    padding: 2rem 1.5rem;
     height: 100%;
+}
+@media (min-width: 768px) {
+    .feature-card {
+        padding: 2.5rem 2rem;
+    }
 }
 .feature-card-icon {
     width: 48px;
@@ -129,7 +142,12 @@ body {
     overflow: hidden;
 }
 .large-feature-card-content {
-    padding: 3rem;
+    padding: 2rem 1.5rem;
+}
+@media (min-width: 768px) {
+    .large-feature-card-content {
+        padding: 3rem;
+    }
 }
 .large-feature-card h3 {
     font-size: 1.75rem;
@@ -180,24 +198,60 @@ body {
 .tech-partners {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     border-top: 1px solid #E2E8F0;
     border-bottom: 1px solid #E2E8F0;
     margin-top: 3rem;
 }
 .tech-partner-item {
-    flex: 1;
+    flex: 1 1 calc(33.333% - 2px);
+    min-width: 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 3rem 1rem;
+    padding: 2.5rem 1rem;
     border-right: 1px dashed #CBD5E1;
+    border-bottom: 1px dashed #CBD5E1;
     color: #0F172A;
     font-weight: 800;
     font-size: 0.9rem;
 }
-.tech-partner-item:last-child {
+.tech-partner-item:nth-child(3n) {
     border-right: none;
+}
+.tech-partner-item:nth-child(n+4) {
+    border-bottom: none;
+}
+
+@media (max-width: 767px) {
+    .tech-partner-item {
+        flex: 1 1 calc(50% - 2px);
+        padding: 2rem 0.5rem;
+    }
+    .tech-partner-item:nth-child(3n) {
+        border-right: 1px dashed #CBD5E1;
+    }
+    .tech-partner-item:nth-child(2n) {
+        border-right: none;
+    }
+    .tech-partner-item:nth-child(n+4) {
+        border-bottom: 1px dashed #CBD5E1;
+    }
+    .tech-partner-item:nth-child(n+5) {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .tech-partner-item {
+        flex: 1 1 100%;
+        border-right: none !important;
+        border-bottom: 1px dashed #CBD5E1;
+    }
+    .tech-partner-item:last-child {
+        border-bottom: none;
+    }
 }
 .tech-partner-item img {
     height: 48px;
@@ -212,7 +266,7 @@ body {
 .cta-outline-card {
     border: 2px solid #0F172A;
     border-radius: 24px;
-    padding: 3.5rem 3rem;
+    padding: 2.5rem 1.5rem;
     position: relative;
     height: 100%;
     background: white;
@@ -221,6 +275,11 @@ body {
     display: block;
     color: inherit;
     text-align: left;
+}
+@media (min-width: 768px) {
+    .cta-outline-card {
+        padding: 3.5rem 3rem;
+    }
 }
 .cta-outline-card:hover {
     transform: translateY(-5px);
